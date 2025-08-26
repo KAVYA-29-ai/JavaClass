@@ -14,6 +14,7 @@ public class Exercise5 {
         System.out.println(Arrays.toString(referencecopy));
 
 
+
         int [] copycopy =  Arrays.copyOf(RealArray, RealArray.length);
         copycopy[0] = 1;
 
@@ -31,4 +32,16 @@ public class Exercise5 {
 [1000, 2, 3, 4, 5]
 [1000, 2, 3, 4, 5]
 @KAVYA-29-ai ➜ /workspaces/JavaClass (main) $ ^C
+ */
+
+
+ /*correct  way 
+    int[] referencecopy = new int[RealArray.size];
+
+    for(int i = 0,i<RealArray.length;i++){
+    b[i]= realarray[i];
+    }
+
+        System.out.println(Arrays.toString(RealArray));
+        System.out.println(Arrays.toString(referencecopy));
  */
